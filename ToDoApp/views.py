@@ -18,7 +18,7 @@ class TaskCreateView(CreateView):
 class TaskUpdateView(UpdateView):
     model = Task
     template_name = 'ToDo/edit_task.html'
-    fields = ['title', 'completed']
+    fields = ['title', 'isCompleted']
     success_url = reverse_lazy('task_list')
 
 class TaskDeleteView(DeleteView):
